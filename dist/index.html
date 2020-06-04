@@ -1,0 +1,62 @@
+
+
+<html>
+<head>
+<style>
+#map {
+  background: #ccc;
+  width: 500px;
+  height: 500px;
+  margin: 40px auto;
+  left: 50%;
+  margin-left: -250px;
+}
+div {
+  position: absolute;
+  border: 1px solid red;
+}
+</style>
+
+</head>
+<body>TANK GAME
+TANK1:
+<textarea id='tank1'>(function runGame(tank) {
+  console.log(tank)
+  setTimeout(() => {
+
+    tank.state = state.run
+  }, 1000)
+  setTimeout(() => {
+    tank.state = state.run
+    
+    tank.shoot(90)
+  }, 3000)
+  setInterval(() => {
+    tank.shoot(90)
+  }, 500)
+  setInterval(() => {
+    tank.runOrg+=92 + Math.random() * 10
+  },3000)
+})</textarea>
+TANK2:
+<textarea id='tank2' >(function runGame(tank) {
+  console.log(tank)
+  setTimeout(() => {
+
+    tank.state = state.run
+  }, 1000)
+  setTimeout(() => {
+    tank.state = state.run
+    
+    tank.shoot(90)
+  }, 3000)
+  setInterval(() => {
+    tank.runOrg+=92
+  },3000)
+})</textarea>
+<button id='btn'>保存</button>
+<script lang='javascript:;'>
+</script>
+<script data-main="../hello.js" type="text/javascript" src="require.js"></script>
+</body>
+</html>

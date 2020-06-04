@@ -1,0 +1,26 @@
+{
+  "name": "tank-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --respawn --transpileOnly src/index.ts src/index.js",
+    "style:prettier": "prettier --write \"src/**/*.ts\"",
+    "build": "tsc src/index --outFile hello.js --module amd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/checkmind/tank-game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/checkmind/tank-game/issues"
+  },
+  "homepage": "https://github.com/checkmind/tank-game#readme",
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.39",
+    "typescript": "^3.4.5"
+  }
+}
